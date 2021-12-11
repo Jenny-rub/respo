@@ -1,0 +1,222 @@
+html {
+    background-color: #e3e3e3;
+    font-family: roboto;
+    margin: 0;
+    font-size: 16px;
+}
+
+/*nav bar */
+
+.bar,
+.downbar {
+    color: whitesmoke;
+}
+
+.bar:visited,
+.downbar:visited {
+    color:wheat
+}
+
+.bar p {
+    left: 25rem;
+  }
+
+.bar ul {
+    list-style-type:none;
+    margin: 0;
+    padding: 5 5;
+    width: 100%;
+    text-align: center;
+    height: 40px;
+    background-color: #455d7a;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+.bar li,
+.downbar li {
+    float: left;
+    margin: 8px;
+    font-weight: bold;
+    margin-right: 1.5rem;
+}
+
+.bar a:hover,
+.downbar a:hover {
+    cursor: pointer;
+    opacity: 0.8;
+    transition: opacity .2s;
+    color: wheat;
+}
+
+.bar a {
+  color: wheat;
+}
+
+
+/* intro section */
+
+.intro {
+    width: 100%;
+    height: 15rem;
+    padding-top: 1rem;
+    background-image: url(pics/michael-shannon-iIrB37J5yfA-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: -webkit-sticky;
+}
+
+.intro h1 {
+    margin-top: 100px;
+    text-align: center;
+    font-size: 50px;
+    font-weight: bolder;
+    color:wheat;
+    background-color: rgba(0.5, 0.5, 0.5, 0.5);
+}
+
+.description h1 {
+  margin-top: 100px;
+  text-align: center;
+  font-size: 50px;
+  font-weight: bolder;
+  color: #f95959;
+  background-color: rgba(0.5, 0.5, 0.5, 0.2);
+}
+
+
+.about h2{
+    font-size: 25px;
+    color: #455d7a;
+}
+
+p {
+    font-size: 15px;
+    line-height: 2;
+    font-weight: bold;
+}
+
+.photos img {
+    width: 30%;
+    margin: 1.5%;
+  }
+
+  /* media */
+
+@media only screen  and (max-width: 1048px) {
+    .photos img {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media only screen and (max-width: 1048px) {
+
+    .photos img {
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  
+  @media only screen and (max-width: 640px) {
+  
+    .intro h1 {
+      margin-top: 2rem;
+    }
+  
+    .intro {
+      max-height: 200px;
+    }
+  
+    .photos img {
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  
+    li {
+      display: block;
+      text-align: center;
+    }
+  }
+  
+  @media only screen and (max-width: 320px) {
+  
+    .testimonial h1 {
+      font-size: 2rem;
+    }
+  
+    .photos img {
+      width: 100%;
+    }
+  }
+
+  @media only screen and (max-width: 1040px) {
+    .about h2,
+    .about p {
+        text-align: center;
+        font-size: 2rem;
+      }
+  }
+
+  /*flexbox */
+
+  .photos {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 5px;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+  }
+
+  .item {
+      margin: 3px;
+      flex: 1;
+  }
+  
+  img {
+    width: 100%;
+    min-width: 800px;
+  }
+
+  .meet h2 {
+      color: #f95959;
+  }
+
+  .meet p {
+      font-weight: bold;
+      margin: 10px;
+      padding-bottom: 30px;
+  }
+  
+  .meet {
+      text-align: center;
+  }
+
+  .bar {
+    color:#233142;
+    padding-top: 1rem;
+    width: 100%;
+}
+
+/* down bar */
+.downbar {
+  position: relative;
+}
+
+.downbar ul {
+  list-style-type:none;
+  margin: 0;
+  padding: 25 25;
+  width: 100%;
+  text-align: center;
+  background-color: #455d7a;
+  position: absolute;
+  bottom: 0;
+  left: -10px;
+}
